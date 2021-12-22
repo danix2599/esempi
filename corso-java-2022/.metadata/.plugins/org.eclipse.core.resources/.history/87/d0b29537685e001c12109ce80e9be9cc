@@ -1,0 +1,49 @@
+package view;
+
+public class Gioco {
+
+	public static void main(String[] args) {
+		//sequenza, selezione, iterazione
+		String sceltaUmano = "pietra";
+		String sceltaPC = "";
+		
+		String risultato = "";
+		
+		sceltaPC = sceltaCasualePC();
+		for (int i = 0; i < 5; i++) {//ciclo che ripete 5 volte le istruzioni
+			
+			
+			//System.out.println("il valore di i è: " + i);
+			
+				if (sceltaUmano.equals(sceltaPC)) {
+					risultato = "pareggio";
+				} //fine blocco if	
+				else {
+					risultato = "non pareggio";
+				} // fine blocco else
+				System.out.println(risultato);
+		}//fine ciclo for
+		
+
+	}//fine main()
+	
+	//scrivo il metodo per far scegliere casualmente una string tra pietra, forbici, carta
+	public static String sceltaCasualePC() {
+		
+		String scelta = "";
+		
+		double casuale = Math.random();//un numero reale casuale compreso tra 0.0 e minore di 1.0
+		
+		if (casuale < 0.33) {
+			scelta = "pietra";
+		} else if (casuale < 0.66) {
+			scelta = "forbici";
+		} else {
+			scelta = "carta";
+		}
+		
+		return scelta;
+		
+	}
+
+}//fine classe

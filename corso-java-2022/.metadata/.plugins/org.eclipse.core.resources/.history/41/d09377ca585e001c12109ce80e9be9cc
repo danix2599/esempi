@@ -1,0 +1,19 @@
+package view;
+
+public class Gioco {
+
+	public static void main(String[] args) {
+		
+		String sceltaUmano = "pietra";
+		String sceltaPC = "forbici";
+		
+		
+		if (sceltaUmano.equals(sceltaPC)) {
+			System.out.println("pareggio");
+		} else {
+			System.out.println("non pareggio");
+		}
+
+	}
+
+}

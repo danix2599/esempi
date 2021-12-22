@@ -1,0 +1,21 @@
+package view;
+
+public class Gioco {
+
+	public static void main(String[] args) {
+		//sequenza, selezione, iterazione
+		String sceltaUmano = "pietra";
+		String sceltaPC = "forbici";
+		
+		for (int i = 0; i < 5; i++) {
+			System.out.println("il valore di i è: " + i);
+		}
+		if (sceltaUmano.equals(sceltaPC)) {
+			System.out.println("pareggio");
+		} else {
+			System.out.println("non pareggio");
+		}
+
+	}
+
+}
